@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92f1756a-ff73-4024-862f-0d4577f4747d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script.js" afterPath="$PROJECT_DIR$/script.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,7 +21,7 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="552">
+                <state relative-caret-position="894">
                   <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
                   <folding />
                 </state>
@@ -56,8 +55,8 @@
           <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+                <state relative-caret-position="406">
+                  <caret line="65" column="52" lean-forward="true" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
@@ -74,8 +73,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/script.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/script.js" />
       </list>
     </option>
   </component>
@@ -150,12 +149,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524378291538</updated>
-      <workItem from="1524378292793" duration="5424000" />
+      <workItem from="1524378292793" duration="9376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5424000" />
+    <option name="totallyTimeSpent" value="9376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="-4" width="1869" height="1084" extended-state="6" />
@@ -163,11 +162,11 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1056338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22408377" sideWeight="0.50216687" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22408377" sideWeight="0.49783316" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -200,7 +199,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
+        <state relative-caret-position="894">
           <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
@@ -208,8 +207,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        <state relative-caret-position="406">
+          <caret line="65" column="52" lean-forward="true" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
           <folding />
         </state>
       </provider>

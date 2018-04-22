@@ -1,5 +1,23 @@
-var personDb = [];
+// Class DB
+function PersonDB() {
+    this.database = [];
+};
 
+PersonDB.prototype.addPerson = function(person) {
+    this.database.push(person);
+};
+
+PersonDB.prototype.removePerson = function(removeIndex) {
+    this.database.splice(removeIndex, 1);
+    renderInstance.setHtml(dbInstance.database);
+};
+
+PersonDB.prototype.displayPeople = function() {
+    console.log(this.database);
+};
+
+
+// Class People
 function Person(attributes) {
     this.name = attributes.name;
     this.surname = attributes.surname;
@@ -7,38 +25,54 @@ function Person(attributes) {
     this.role = attributes.role;
 };
 
-function renderRow(name, surname, age, role) {
-    return '<div><div>' + name + '</div><div>' + surname + '</div><div>' + age + '</div><div>' + role + '</div></div>';
+
+// Class for render methods
+function Render(container, button, inputName, inputSurname, inputAge, inputRole) {
+    this.container = document.getElementById(container);
+    this.button = document.getElementById(button);
+    this.inputName = document.getElementById(inputName);
+    this.inputSurname = document.getElementById(inputSurname);
+    this.inputAge = document.getElementById(inputAge);
+    this.inputRole = document.getElementById(inputRole);
 };
 
-function renderDb() {
-    var containerDb = document.getElementById('records');
-    containerDb.innerHTML = '';
-    personDb.map(function(person){
-        containerDb.innerHTML += renderRow(person.name, person.surname, person.age, person.role);
+Render.prototype.renderRow = function(name, surname, age, role, index) {
+    return '<div><div>' + name + '</div><div>' + surname + '</div><div>' + age + '</div><div>' + role + '</div><button onclick="dbInstance.removePerson('+index+')">Jednak lubię tą osobę</button></div>';
+};
+
+Render.prototype.setHtml = function(database) {
+    this.container.innerHTML = '';
+    var self = this;
+    database.map(function(person, index){
+        self.container.innerHTML += self.renderRow(person.name, person.surname, person.age, person.role, index);
+    });
+};
+
+Render.prototype.getValuesFromInput = function() {
+    return {
+        name: this.inputName.value,
+        surname: this.inputSurname.value,
+        age: this.inputAge.value,
+        role: this.inputRole.value,
+    }
+};
+
+Render.prototype.addClick = function() {
+    var self = this;
+    this.button.addEventListener('click', function(){
+        var person = self.getValuesFromInput();
+
+        dbInstance.addPerson(person);
+        renderInstance.setHtml(dbInstance.database);
     });
 };
 
 
 
-var addButton = document.getElementById('addButton');
-addButton.addEventListener('click', function(){
-    var inputName = document.getElementById('inputName').value;
-    var inputSurname = document.getElementById('inputSurname').value;
-    var inputAge = document.getElementById('inputAge').value;
-    var inputRole = document.getElementById('inputRole').value;
+// Create object of PersonDB
+var dbInstance = new PersonDB();
 
-    var person1 = new Person({
-        name: inputName,
-        surname: inputSurname,
-        age: inputAge,
-        role: inputRole
-    });
-
-    personDb.push(person1);
-
-    renderDb();
-});
-
-
-renderDb();
+// Create object of Render
+var renderInstance = new Render('records', 'addButton', 'inputName', 'inputSurname', 'inputAge', 'inputRole');
+renderInstance.addClick();
+renderInstance.setHtml(dbInstance.database);
